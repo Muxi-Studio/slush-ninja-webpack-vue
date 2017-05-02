@@ -1,0 +1,32 @@
+{
+  "name": "slush-ninja-webpack-vue",
+  "version": "1.0.0",
+  "description": "Slush file for webpack and vue for ninja init",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muxi-Studio/slush-ninja-webpack-vue.git"
+  },
+  "keywords": [
+    "ninja",
+    "vue",
+    "webpack"
+  ],
+  "author": "Muxi-Studio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muxi-Studio/slush-ninja-webpack-vue/issues"
+  },
+  "homepage": "https://github.com/Muxi-Studio/slush-ninja-webpack-vue#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-conflict": "^0.4.0",
+    "gulp-install": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-template": "^4.0.0",
+    "inquirer": "^3.0.6"
+  }
+}
