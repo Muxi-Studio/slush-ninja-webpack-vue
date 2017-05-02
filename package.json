@@ -2,7 +2,7 @@
   "name": "slush-ninja-webpack-vue",
   "version": "1.0.0",
   "description": "Slush file for webpack and vue for ninja init",
-  "main": "index.js",
+  "main": "slushfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
