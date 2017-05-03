@@ -1,16 +1,15 @@
 const webpack = require('webpack')
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    devtool: '#cheap-module-eval-source-map',
     entry: [
-        'webpack-hot-middleware/client?reload=true',
         path.resolve(__dirname, './src/main.js')
     ],
     output: {
-        path: path.join(__dirname, "./dist"),
-        publicPath: 'http://localhost:3000/dist/',
-        filename: '[name].js'
+        path: path.join(__dirname, "static"),
+        publicPath: '../static/',
+        filename: '[name].[chunkhash].js'
     },
     module: {
         rules: [
@@ -44,7 +43,7 @@ module.exports = {
             test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
             loader: 'url-loader',
             options: {
-              limit: 100000,
+              limit: 10000,
               name: '[name].[hash:7].[ext]'
             }
         },
@@ -52,7 +51,7 @@ module.exports = {
             test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
             loader: 'url-loader',
             options: {
-              limit: 100000,
+              limit: 10000,
               name: '[name].[hash:7].[ext]'
             }
         }
@@ -62,7 +61,17 @@ module.exports = {
         extensions: ['.js', '.scss', '.vue']
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoEmitOnErrorsPlugin()
-    ],
+        new webpack.NoEmitOnErrorsPlugin(),
+        new webpack.optimize.UglifyJsPlugin({
+          compress: {
+            warnings: false
+          },
+          sourceMap: true
+        }),
+        new HtmlWebpackPlugin({
+            filename: '../template/index.html',
+            inject: true,
+            template: './index.html'
+        }),
+    ]
 }

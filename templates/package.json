@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "dev": "ninja start",
-    "build": "ninja build"
+    "build": "node_modules/.bin/webpack --progress --config webpack.prod.config.js"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,7 @@
     "vue": "^2.3.2",
     "babel-polyfill": "*"
   },
-  "devDependencies": { <% if (es6 !== 'buble') { %>
+  "devDependencies": { <% if (js !== 'buble') { %>
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
     "babel-plugin-transform-runtime": "^6.0.0",
@@ -35,6 +35,8 @@
     "vue-loader": "^9.9.0", <% if (vuerouter) { %>
     "vue-router": "^2.1.1", <% } %> 
     "vue-style-loader": "^1.0.0",
-    "webpack": "^2.4.1"
+    "webpack": "^2.4.1",
+    "webpack-dev-middleware": "^1.10.1",
+    "webpack-hot-middleware": "^2.18.0"
   }
 }

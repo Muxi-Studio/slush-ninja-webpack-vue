@@ -13,24 +13,24 @@ gulp.task('default', function(done) {
     {
       type: 'input',
       name: 'appName',
-      message: 'Project name',
+      message: 'What is your project name?',
       default: getName()
     },
     {
       type: 'input',
       name: 'description',
-      message: 'Project description',
+      message: 'What is your project description?',
       default: 'A vue project.'
     },
     {
       type: 'confirm',
       name: 'vuerouter',
-      message: 'Vue-router?',
+      message: 'Do you need Vue-router?',
       default: true
     },
     {
       type: 'list',
-      name: 'es6',
+      name: 'js',
       message: 'Which ES2015+ compiler do you want to use?',
       default: '',
       choices: [
@@ -65,9 +65,9 @@ gulp.task('default', function(done) {
 	  	return done()
 	  }
 
-	  const filesPath = [__dirname + '/templates/**']
+	  let filesPath = [__dirname + '/templates/**']
 
-	  if(answers.es6) {
+	  if(answers.js) {
 	  	filesPath = filesPath.concat([
 	      '!' + __dirname + '/templates/_babelrc'
 	    ])
