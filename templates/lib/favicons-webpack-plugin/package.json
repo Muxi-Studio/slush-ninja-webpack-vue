@@ -1,0 +1,159 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "favicons-webpack-plugin",
+        "scope": null,
+        "escapedName": "favicons-webpack-plugin",
+        "name": "favicons-webpack-plugin",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/zindex/Desktop/my-project"
+    ]
+  ],
+  "_from": "favicons-webpack-plugin@latest",
+  "_id": "favicons-webpack-plugin@0.0.7",
+  "_inCache": true,
+  "_location": "/favicons-webpack-plugin",
+  "_nodeVersion": "0.12.13",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/favicons-webpack-plugin-0.0.7.tgz_1472213514420_0.6836462030187249"
+  },
+  "_npmUser": {
+    "name": "jantimon",
+    "email": "j.nicklas@me.com"
+  },
+  "_npmVersion": "2.15.0",
+  "_phantomChildren": {
+    "assert": "1.4.1",
+    "browserify-zlib": "0.1.4",
+    "buffer": "4.9.1",
+    "center-align": "0.1.3",
+    "chokidar": "1.7.0",
+    "clone": "1.0.2",
+    "console-browserify": "1.1.0",
+    "constants-browserify": "1.0.0",
+    "core-util-is": "1.0.2",
+    "decamelize": "1.2.0",
+    "domain-browser": "1.1.7",
+    "errno": "0.1.4",
+    "events": "1.1.1",
+    "graceful-fs": "4.1.11",
+    "has-flag": "1.0.0",
+    "https-browserify": "0.0.1",
+    "inherits": "2.0.3",
+    "loader-utils": "0.2.17",
+    "mkdirp": "0.5.1",
+    "optimist": "0.6.1",
+    "os-browserify": "0.2.1",
+    "path-browserify": "0.0.0",
+    "pbkdf2-compat": "2.0.1",
+    "process": "0.11.10",
+    "process-nextick-args": "1.0.7",
+    "punycode": "1.4.1",
+    "querystring-es3": "0.2.1",
+    "right-align": "0.1.3",
+    "safe-buffer": "5.0.1",
+    "source-map": "0.5.6",
+    "stream-browserify": "2.0.1",
+    "stream-http": "2.7.1",
+    "timers-browserify": "2.0.2",
+    "tty-browserify": "0.0.0",
+    "uglify-to-browserify": "1.0.2",
+    "url": "0.11.0",
+    "util": "0.10.3",
+    "util-deprecate": "1.0.2",
+    "vm-browserify": "0.0.4",
+    "webpack-core": "0.6.9",
+    "window-size": "0.1.0",
+    "wordwrap": "0.0.2"
+  },
+  "_requested": {
+    "raw": "favicons-webpack-plugin",
+    "scope": null,
+    "escapedName": "favicons-webpack-plugin",
+    "name": "favicons-webpack-plugin",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/favicons-webpack-plugin/-/favicons-webpack-plugin-0.0.7.tgz",
+  "_shasum": "253a46a4f93d137d1096762877f8a8ef12e28648",
+  "_shrinkwrap": null,
+  "_spec": "favicons-webpack-plugin",
+  "_where": "/Users/zindex/Desktop/my-project",
+  "author": {
+    "name": "Jan Nicklas",
+    "email": "j.nicklas@me.com",
+    "url": "https://github.com/jantimon"
+  },
+  "bugs": {
+    "url": "https://github.com/jantimon/favicons-webpack-plugin/issues"
+  },
+  "dependencies": {
+    "favicons": "^4.7.1",
+    "loader-utils": "^0.2.14",
+    "lodash": "^4.11.1",
+    "webpack": "^1.13.0"
+  },
+  "description": "Let webpack generate all your favicons and icons for you",
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "babel-eslint": "^6.0.2",
+    "denodeify": "^1.2.1",
+    "dir-compare": "^1.0.1",
+    "express": "^4.13.4",
+    "html-webpack-plugin": "^2.16.0",
+    "memory-fs": "^0.3.0",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.5.2",
+    "semistandard": "^7.0.5",
+    "webpack": "^1.13.0",
+    "webpack-dev-middleware": "^1.6.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "253a46a4f93d137d1096762877f8a8ef12e28648",
+    "tarball": "https://registry.npmjs.org/favicons-webpack-plugin/-/favicons-webpack-plugin-0.0.7.tgz"
+  },
+  "files": [
+    "index.js",
+    "lib/"
+  ],
+  "gitHead": "ad68acdb8302df73579c39c12db43e2f2b0f9c31",
+  "homepage": "https://github.com/jantimon/favicons-webpack-plugin",
+  "keywords": [
+    "webpack",
+    "plugin",
+    "html-webpack-plugin",
+    "favicon",
+    "icon"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "jantimon",
+      "email": "j.nicklas@me.com"
+    }
+  ],
+  "name": "favicons-webpack-plugin",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jantimon/favicons-webpack-plugin.git"
+  },
+  "scripts": {},
+  "semistandard": {
+    "parser": "babel-eslint"
+  },
+  "version": "0.0.7"
+}
